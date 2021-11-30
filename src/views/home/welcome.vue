@@ -1,22 +1,17 @@
 <template>
-  <div class="welcome swiper-container mySwiper">
+  <div class="swiper-container welcome mySwiper">
     <div class="swiper-wrapper">
       <div class="swiper-slide">Slide 1</div>
       <div class="swiper-slide">Slide 2</div>
       <div class="swiper-slide">Slide 3</div>
-      <div class="swiper-slide">Slide 4</div>
-      <div class="swiper-slide">Slide 5</div>
-      <div class="swiper-slide">Slide 6</div>
-      <div class="swiper-slide">Slide 7</div>
-      <div class="swiper-slide">Slide 8</div>
-      <div class="swiper-slide">Slide 9</div>
     </div>
     <div class="swiper-pagination"></div>
   </div>
 </template>
 
 <script>
-
+import Swiper, { Navigation, Pagination } from "swiper";
+import "swiper/swiper-bundle.css";
 
 export default {
   name: "Welcome",
@@ -24,16 +19,23 @@ export default {
     return {};
   },
   mounted() {
- 
+    Swiper.use([Navigation, Pagination])
+    var swiper = new Swiper(".mySwiper", {
+      direction: "vertical",
+      autoplay: true,
+      slidesPerView: 1,
+      spaceBetween: 30,
+      mousewheel: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
   },
 };
 </script>
 
 <style lang="less" scoped>
-.welcome {
-  width: 100vw;
-  height: 100vh;
-}
 .swiper-container {
   width: 100%;
   height: 100%;
@@ -41,6 +43,8 @@ export default {
   margin-right: auto;
 }
 .swiper-slide {
+  width: 100%;
+  height: 100%;
   text-align: center;
   font-size: 18px;
   background: #fff;
