@@ -13,7 +13,18 @@ body,
 
 }
 
-
+@font-face {
+  font-family: 'title-speed';
+  src: url(../font/font-family/Delicious-Choice-1.ttf);
+}
+@font-face {
+  font-family: 'HanYiBaiQiTiJian';
+  src: url(../font/font-family/SunXiaoSongXiaFenTi-2.otf);
+}
+@font-face {
+  font-family: 'HARRINGT';
+  src: url(../font/font-family/HARRINGT-2.ttf);
+}
 
 .el-breadcrumb {
   margin-bottom: 15px;

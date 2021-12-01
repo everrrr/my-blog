@@ -50,7 +50,6 @@ export default {
 .swiper-container {
       width: 100vw;
       height: 100vh;
-      border-radius: 10px;
       position: relative;
 
 
