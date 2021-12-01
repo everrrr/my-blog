@@ -2,7 +2,9 @@
   <div class="welcome">
     <div class="swiper-container" id="swiper_silder">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">Slide 1</div>
+        <div class="swiper-slide">
+          <welcome-first></welcome-first>
+        </div>
         <div class="swiper-slide">Slide 2</div>
         <div class="swiper-slide">Slide 3</div>
       </div>
@@ -13,12 +15,14 @@
 
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper"
+import WelcomeFirst from '../../components/welcome/WelcomeFirst.vue';
 
 export default {
   name: "Welcome",
   components: {
     Swiper,
     SwiperSlide,
+    WelcomeFirst
   },
   data() {
     return {};
