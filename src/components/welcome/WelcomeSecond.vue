@@ -7,8 +7,11 @@
 export default ({
   name: 'WelcomeSecond',
   data(){
-      
-  }
+      return {
+          temp: 1
+      }
+  },
+
 })
 </script>
 
