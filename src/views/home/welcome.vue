@@ -5,7 +5,9 @@
         <div class="swiper-slide">
           <welcome-first></welcome-first>
         </div>
-        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">
+          <welcome-second></welcome-second>
+        </div>
         <div class="swiper-slide">Slide 3</div>
       </div>
       <div class="swiper-pagination"></div>
@@ -16,13 +18,15 @@
 <script>
 import { Swiper, SwiperSlide } from "vue-awesome-swiper"
 import WelcomeFirst from '../../components/welcome/WelcomeFirst.vue';
+import WelcomeSecond from '../../components/welcome/WelcomeSecond.vue'
 
 export default {
   name: "Welcome",
   components: {
     Swiper,
     SwiperSlide,
-    WelcomeFirst
+    WelcomeFirst,
+    WelcomeSecond
   },
   data() {
     return {};

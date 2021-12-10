@@ -71,7 +71,7 @@ export default {
   .view {
     width: 100%;
     height: 100vh;
-    background: url(../../assets/images/random.jpeg) no-repeat center center;
+    background: url(../../assets/images/welcome/random.jpeg) no-repeat center center;
     background-size: cover;
 
     .top_board {
