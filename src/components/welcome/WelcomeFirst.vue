@@ -54,7 +54,7 @@ export default {
   methods: {
     homeClick() {
       this.isActive1 = true;
-      this.$router.push("/welcome");
+      this.$router.push("/home");
     },
     entryClick() {
       this.isActive2 = false;
