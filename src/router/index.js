@@ -14,7 +14,14 @@ export default new Router({
     {
       path: '/home',
       name: 'Home',
-      component: () => import('@/views/home/home.vue')
+      component: () => import('@/views/home/home.vue'),
+      children:[
+        {
+          path: '/nodeStart',
+          name: 'NodeStart',
+          component: () => import('@/views/nodeTechnology/nodeStart.vue')
+        }
+      ]
     }
   ]
 })
